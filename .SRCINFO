@@ -1,6 +1,6 @@
 pkgbase = python-pathspec
 	pkgdesc = Utility library for gitignore style pattern matching of file paths
-	pkgver = 0.12.0
+	pkgver = 0.12.1
 	pkgrel = 1
 	url = https://github.com/cpburnz/python-pathspec
 	arch = any
@@ -11,7 +11,7 @@ pkgbase = python-pathspec
 	makedepends = python-installer
 	makedepends = python-wheel
 	depends = python
-	source = git+https://github.com/cpburnz/python-pathspec.git#tag=v0.12.0
+	source = git+https://github.com/cpburnz/python-pathspec.git#tag=v0.12.1
 	b2sums = SKIP
 
 pkgname = python-pathspec

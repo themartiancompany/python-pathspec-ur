@@ -3,7 +3,7 @@
 
 pkgname=python-pathspec
 _name=${pkgname#python-}
-pkgver=0.12.0
+pkgver=0.12.1
 pkgrel=1
 pkgdesc='Utility library for gitignore style pattern matching of file paths'
 arch=('any')
