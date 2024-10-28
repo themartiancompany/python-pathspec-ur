@@ -6,6 +6,15 @@
 # Contributor:  Chris Severance aur.severach aATt spamgourmet dott com
 
 _py="python"
+_pyver="$( \
+  "${_py}" \
+    -V | \
+    awk \
+      '{print $2}')"
+_pymajver="${_pyver%.*}"
+_pyminver="${_pymajver#*.}"
+_pynextver="${_pymajver%.*}.$(( \
+  ${_pyminver} + 1))"
 _pkg="pathspec"
 pkgname="${_py}-${_pkg}"
 pkgver=0.12.1
@@ -19,7 +28,8 @@ license=(
   'MPL2'
 )
 depends=(
-  "${_py}"
+  "${_py}>=${_pymajver}"
+  "${_py}<${_pynextver}"
 )
 makedepends=(
   'git'
